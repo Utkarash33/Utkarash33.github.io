@@ -70,12 +70,12 @@
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="assets/img/profile (2).png" alt="">
+                    <img src="assets/img/profile (2).png" class="home-img">
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle user-detail-name" >I'am Utkarash</h2>
-                    <p class="about__text user-detail-intro"> Passion-driven learner and web developer with problem-solving and analyzing
+                    <h2 class="about__subtitle" id="user-detail-name" >I'am Utkarash Thakur</h2>
+                    <p class="about__text" id=" user-detail-intro"> Passion-driven learner and web developer with problem-solving and analyzing
                         skills and the ability to write clear and
                         reusable code.
                         Looking forward
@@ -203,14 +203,14 @@
         </section>
 
         <!--===== WORK =====-->
-        <section class="work section" id="work" id ="projects">
+        <section class="work section" id ="projects">
             <h2 class="section-title">Projects</h2>
 
             <div class="work__container bd-grid">
                
 
                 <!-- <div > -->
-                <div class="work__box">
+                <div class="work__box"  class="project-card" >
                     <div class="right_box_work">
                         <a href="" class="work__img">
                             <img src="" alt="">
@@ -218,18 +218,18 @@
                     </div>
                     <div class="left_box_work">
                         <div class="work_project_name">
-                            <h2 class="project-heading">Traverse Travel Website</h2>
+                            <h2 class="project-heading project-title ">Traverse Travel Website</h2>
                         </div>
-                        <p class="project-para">A Holiday booking webiste where user can book different holiday destinations...
+                        <p class="project-para project-description">A Holiday booking webiste where user can book different holiday destinations...
                         </p>
-                        <a style="display:inline-block;margin-right: 20px;"
+                        <a class="project-github-link" style="display:inline-block;margin-right: 20px;"
                             href="https://github.com/Utkarash33/frail-show-474" target="_blank">Code<i
                                 class="fa-brands fa-github" style="display: block-inline;margin-left:5px"></i></a>
-                        <a style="display:inline-block;margin-right: 20px;"
+                        <a class="project-deployed-link" style="display:inline-block;margin-right: 20px;"
                             href="https://travasure.netlify.app/"
                             target="_blank">Live<i class="fa-solid fa-square-arrow-up-right"
                                 style="display: block-inline;margin-left:5px"></i></a>
-                        <div>
+                        <div class="project-tech-stack">
                             <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">Java-Script
                             </p>
                             <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">HTML</p>
@@ -241,7 +241,7 @@
                 <!-- </div> -->
 
                 <!-- <div > -->
-                <div class="work__box">
+                <div class="work__box"  class="project-card">
                     <div class="right_box_work">
                         <a href="" class="work__img">
                             <img src="" alt="">
@@ -249,17 +249,17 @@
                     </div>
                     <div class="left_box_work">
                         <div class="work_project_name">
-                            <h2 class="project-heading">ShowTime Central</h2>
+                            <h2 class="project-heading project-title">ShowTime Central</h2>
                         </div>
-                        <p class="project-para">Objective of this application is to manage all the record of the events,
+                        <p class="project-para project-description">Objective of this application is to manage all the record of the events,
                             Organizers and provide a interface for users to book different events.</p>
-                        <a style="display:inline-block;margin-right: 20px;"
+                        <a  class="project-github-link" style="display:inline-block;margin-right: 20px;"
                             href="https://github.com/Utkarash33/precious-plate-5541" target="_blank">Code<i
                                 class="fa-brands fa-github" style="display: block-inline;margin-left:5px"></i></a>
-                        <a style="display:inline-block;margin-right: 20px;"
+                        <a class="project-deployed-link" style="display:inline-block;margin-right: 20px;"
                             href="https://drive.google.com/file/d/1ir_4FHIG1CbxZtCiikU77cLWPK4MuTpJ/view?usp=sharing" target="_blank">Live<i
                                 class="fa-solid fa-square-arrow-up-right" style="display: block-inline;margin-left:5px"></i></a>
-                        <div>
+                        <div class="project-tech-stack">
                             <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">JAVA
                             </p>
                         </div>
@@ -308,7 +308,7 @@
 
 
         <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
+        <section class="contact section" >
 
             <h2 class="section-title">Have an idea ?</h2>
             <a href="#footer" style="text-align: center;
@@ -336,17 +336,18 @@
     </main>
 
     <!--===== FOOTER =====-->
-    <footer class="footer" id="footer">
+    <footer class="footer" id="footer" id="contact">
         <p class="footer__title">Let's do creative</p>
         <div class="footer__social">
-            <a href="https://www.linkedin.com/in/nikhil-chauhan-744b58236/" target="_blank" class="footer__icon"><i
+            <a  id="contact-linkedin" href="https://www.linkedin.com/in/utkarash-thakur-70439a262/" target="_blank" class="footer__icon"><i
                     class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/NLucifer03" target="_blank" class="footer__icon"><i
+            <a id="contact-github" href="https://github.com/Utkarash33" target="_blank" class="footer__icon"><i
                     class='bx bxl-github'></i></a>
 
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJVSNppzXwmgnsVMLnGgvtvHFHjtXQjkNSTknxlbgmqGxqCDQRGVlWKLjbsvXMwtBqpML"
+            <a id="contact-email" href="mailto:atulthakur3303@gmail.com"
                 target="_blank" class="footer__icon"><i class="fa-solid fa-envelope"></i>
             </a>
+            <p id="contact-phone" style="margin-top: 30px;">+91 8580404902</p>
         </div>
         <p class="footer__copy">&#169; Creataed by Utkarash</p>
     </footer>
