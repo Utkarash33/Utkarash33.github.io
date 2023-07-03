@@ -14,7 +14,7 @@ showMenu('nav-toggle', 'nav-menu')
 // //===================Resume=================
 
 window.addEventListener('DOMContentLoaded', () => {
-    const resumeLink = document.getElementById('resume-link-2');
+    const resumeLink = document.getElementById('resume-button-1');
 
     if (resumeLink) {
         resumeLink.addEventListener('click', (event) => {
