@@ -14,19 +14,23 @@ showMenu('nav-toggle', 'nav-menu')
 // //===================Resume=================
 
 window.addEventListener('DOMContentLoaded', () => {
-    const resumeButton = document.getElementById('resume2');
-  
-    resumeButton.addEventListener('click', () => {
-      const file = 'assets/Utkarash-Thakur-Resume.pdf';
-      const downloadLink = document.createElement('a');
-      downloadLink.href = file;
-      downloadLink.download = file.substring(file.lastIndexOf('/') + 1);
-      downloadLink.click();
-      
-      const url = 'https://drive.google.com/file/d/1E1GWpPqwZRcPCeI4pBCCyfnzDbfIdchn/view?usp=sharing';
-      window.open(url);
-    });
-  });
+    const resumeLink = document.getElementById('resume-link-2');
+
+    if (resumeLink) {
+        resumeLink.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const file = 'assets/Utkarash-Thakur-Resume.pdf';
+            const downloadLink = document.createElement('a');
+            downloadLink.href = file;
+            downloadLink.download = file.substring(file.lastIndexOf('/') + 1);
+            downloadLink.click();
+
+            const url = 'https://drive.google.com/file/d/1E1GWpPqwZRcPCeI4pBCCyfnzDbfIdchn/view?usp=sharing';
+            window.open(url);
+        });
+    }
+});
 
 
 
