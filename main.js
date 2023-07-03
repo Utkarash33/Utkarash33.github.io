@@ -13,26 +13,18 @@ showMenu('nav-toggle', 'nav-menu')
 
 // //===================Resume=================
 
-window.addEventListener('DOMContentLoaded', () => {
-    const resumeLink = document.getElementById('resume-button-1');
 
-    if (resumeLink) {
-        resumeLink.addEventListener('click', (event) => {
-            event.preventDefault();
-
-            const file = 'assets/Utkarash-Thakur-Resume.pdf';
-            const downloadLink = document.createElement('a');
-            downloadLink.href = file;
-            downloadLink.download = file.substring(file.lastIndexOf('/') + 1);
-            downloadLink.click();
-
-            const url = 'https://drive.google.com/file/d/1E1GWpPqwZRcPCeI4pBCCyfnzDbfIdchn/view?usp=sharing';
-            window.open(url);
-        });
-    }
-});
-
-
+function openResume() {
+    // Open the resume in a new tab
+    window.open("assets/Utkarash-Thakur-Resume.pdf", "_blank");
+  
+    // Download the resume as a PDF
+    let downloadLink = document.createElement('a');
+    downloadLink.href = "assets/Utkarash-Thakur-Resume.pdf";
+    downloadLink.download = "Utkarash-Thakur-Resume.pdf";
+    downloadLink.click();
+  }
+  
 
 // // 
 // /*==================== REMOVE MENU MOBILE ====================*/
