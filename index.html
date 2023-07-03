@@ -22,7 +22,7 @@
                     <li class="nav__item"><a href="#home" class="nav__link nav-link home active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link nav-link about">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link nav-link skills">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link nav-link projects">Projects</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link nav-link projects">Projects</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link nav-link contact">Contact</a></li>
                     <li class="nav__item"><a href="#resume" class="nav__link nav-link resume">Resume</a></li>
 
@@ -65,7 +65,7 @@
         </section>
 
         <!--===== ABOUT =====-->
-        <section class="about section " id="about">
+        <section class="about section " >
             <h2 class="section-title">About</h2>
 
             <div class="about__container bd-grid">
@@ -73,7 +73,7 @@
                     <img src="assets/img/profile (2).png" class="home-img">
                 </div>
 
-                <div>
+                <div id="about">
                     <h2 class="about__subtitle" id="user-detail-name" >I'am Utkarash Thakur</h2>
                     <p class="about__text" id=" user-detail-intro"> Passion-driven learner and web developer with problem-solving and analyzing
                         skills and the ability to write clear and
@@ -81,7 +81,7 @@
                         Looking forward
                         to join a challenging and progressive environment.
                     </p>
-                    <div style="margin-top: 20px;">
+                    <!-- <div style="margin-top: 20px;">
                         <a
                             target="_blank" class="about__details"><i class="fa-solid fa-envelope skills__icon"
                                 style="font-size: 14px;transition: .5s;"></i>
@@ -91,7 +91,7 @@
 
                         <p href="" class="about__details"><i class="fa-solid fa-phone skills__icon"
                                 style="font-size: 14px;"></i>+91 8580404902</p>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -202,8 +202,8 @@
             </div>
         </section>
 
-        <!--===== WORK =====-->
-        <section class="work section" id ="projects">
+        <!--===== PROJECTS =====-->
+        <section  id ="projects" class="work section" >
             <h2 class="section-title">Projects</h2>
 
             <div class="work__container bd-grid">
@@ -281,7 +281,7 @@
             <p align="center" style="width:70%;margin:auto;">
                 <img width="60%%"
                     src="https://github-readme-stats.vercel.app/api?username=Utkarash33&show_icons=true&theme=default" />
-                <img width="60%%"
+                <img id="github-streak-stats" width="60%%"
                     src="https://github-readme-streak-stats.herokuapp.com/?user=Utkarash33&theme=default" />
             </p>
 
@@ -291,6 +291,8 @@
             <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
             <link rel="stylesheet"
                 href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+                <script src="https://cdn.jsdelivr.net/npm/@hackclub/github-calendar@2.0.0/dist/calendar.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@anuraghazra/github-readme-stats@2.1.1/dist/index.js"></script>
 
             <!-- Prepare a container for your calendar. -->
             <div class="calendar" style="width: 65%;margin-top: 40px;">
@@ -336,7 +338,7 @@
     </main>
 
     <!--===== FOOTER =====-->
-    <footer class="footer" id="footer" id="contact">
+    <section id="contact" class="footer" id="footer" >
         <p class="footer__title">Let's do creative</p>
         <div class="footer__social">
             <a  id="contact-linkedin" href="https://www.linkedin.com/in/utkarash-thakur-70439a262/" target="_blank" class="footer__icon"><i
@@ -350,7 +352,7 @@
             <p id="contact-phone" style="margin-top: 30px;">+91 8580404902</p>
         </div>
         <p class="footer__copy">&#169; Creataed by Utkarash</p>
-    </footer>
+    </section>
 
 </body>
 
@@ -358,6 +360,7 @@
  <!--===== SCROLL REVEAL =====-->
  <script src="https://unpkg.com/scrollreveal"></script>
 
+ 
  <!--===== MAIN JS =====-->
  <script src="./main.js"></script>
 </html>

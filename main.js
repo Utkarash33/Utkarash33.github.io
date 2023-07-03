@@ -13,7 +13,7 @@ showMenu('nav-toggle', 'nav-menu')
 
 // //===================Resume=================
 
-// document.getElementById("resume2").onclick = function(){
+// document.getElementById("resume2").onclick = ()=>{
 //     let file = "assets/Utkarash-Thakur-Resume.pdf";
 //     let down  = document.createElement("a");
 //     down.href = file;
