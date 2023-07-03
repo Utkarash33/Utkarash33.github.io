@@ -13,16 +13,16 @@ showMenu('nav-toggle', 'nav-menu')
 
 // //===================Resume=================
 
-// document.getElementById("resume2").onclick = ()=>{
-//     let file = "assets/Utkarash-Thakur-Resume.pdf";
-//     let down  = document.createElement("a");
-//     down.href = file;
-//     down.download = file.substring(file.lastIndexOf("/")+1);
-//     down.click();
-//     let url = "https://drive.google.com/file/d/1E1GWpPqwZRcPCeI4pBCCyfnzDbfIdchn/view?usp=sharing";
-//     window.open(url);
+document.getElementById("resume2").onclick = ()=>{
+    let file = "assets/Utkarash-Thakur-Resume.pdf";
+    let down  = document.createElement("a");
+    down.href = file;
+    down.download = file.substring(file.lastIndexOf("/")+1);
+    down.click();
+    let url = "https://drive.google.com/file/d/1E1GWpPqwZRcPCeI4pBCCyfnzDbfIdchn/view?usp=sharing";
+    window.open(url);
 
-// }
+}
 
 
 
