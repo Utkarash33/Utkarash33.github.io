@@ -49,36 +49,36 @@ const showMenu = (toggleId, navId) => {
   navLink.forEach((n) => n.addEventListener('click', linkAction));
   
   // Scroll sections active link
-  const sections = document.querySelectorAll('section[id]');
+  // const sections = document.querySelectorAll('section[id]');
   
-  function scrollActive() {
-    const scrollY = window.pageYOffset;
+  // function scrollActive() {
+  //   const scrollY = window.pageYOffset;
   
-    sections.forEach((current) => {
-      const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 50;
-      const sectionId = current.getAttribute('id');
+  //   sections.forEach((current) => {
+  //     const sectionHeight = current.offsetHeight;
+  //     const sectionTop = current.offsetTop - 50;
+  //     const sectionId = current.getAttribute('id');
   
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active');
-      } else {
-        document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active');
-      }
-    });
-  }
-  window.addEventListener('scroll', scrollActive);
+  //     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+  //       document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active');
+  //     } else {
+  //       document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active');
+  //     }
+  //   });
+  // }
+  // window.addEventListener('scroll', scrollActive);
   
-  // Scroll reveal animation
-  const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 1500,
-    delay: 200,
-    reset: true
-  });
+  // // Scroll reveal animation
+  // const sr = ScrollReveal({
+  //   origin: 'top',
+  //   distance: '60px',
+  //   duration: 1500,
+  //   delay: 200,
+  //   reset: true
+  // });
   
-  sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
-  sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img, .about__details', { delay: 300 });
-  sr.reveal('.home__social-icon', { interval: 200 });
-  sr.reveal('.skills__data, .work__img, .contact__input', { interval: 200 });
+  // sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
+  // sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img, .about__details', { delay: 300 });
+  // sr.reveal('.home__social-icon', { interval: 200 });
+  // sr.reveal('.skills__data, .work__img, .contact__input', { interval: 200 });
   
