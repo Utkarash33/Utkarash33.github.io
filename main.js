@@ -16,13 +16,19 @@ const showMenu = (toggleId, navId) => {
   const resumeButton2 = document.getElementById('resume-button-2');
   
   resumeButton1.addEventListener('click', openResume);
-  resumeButton2.addEventListener('click', ()=>
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    resumeButton2.addEventListener('click', (e)=>
   {
+    e.preventDefault;
     const downloadLink = document.createElement('a');
     downloadLink.href = 'assets/Utkarash-Thakur-Resume.pdf';
     downloadLink.download = 'Utkarash-Thakur-Resume.pdf';
     downloadLink.click();
   });
+  });
+  
 
   function openResume() {
     // Open the resume in a new tab
