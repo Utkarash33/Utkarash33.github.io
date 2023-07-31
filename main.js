@@ -25,7 +25,10 @@ const showMenu = (toggleId, navId) => {
   });
   resumeLink2.addEventListener('click', (e) => {
     e.preventDefault();
-    openResume();
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'assets/Utkarash-Thakur-Resume.pdf';
+    downloadLink.download = 'Utkarash-Thakur-Resume.pdf';
+    downloadLink.click();
   });
   
   function openResume() {
