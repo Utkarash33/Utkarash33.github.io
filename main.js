@@ -18,7 +18,15 @@ const showMenu = (toggleId, navId) => {
   const resumeLink2 = document.getElementById('resume-link-2');
   
   resumeButton1.addEventListener('click', openResume);
-  resumeButton2.addEventListener('click', openResume);
+  resumeButton2.addEventListener('click', 
+  (e)=>
+  {
+    e.preventDefault();
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'assets/Utkarash-Thakur-Resume.pdf';
+    downloadLink.download = 'Utkarash-Thakur-Resume.pdf';
+    downloadLink.click();
+  });
   resumeLink1.addEventListener('click', (e) => {
     e.preventDefault();
     openResume();
