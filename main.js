@@ -21,10 +21,11 @@ const showMenu = (toggleId, navId) => {
   
     resumeButton2.addEventListener('click', ()=>
     {
-      const downloadLink = document.createElement('a');
+    const downloadLink = document.createElement('a');
     downloadLink.href = 'https://drive.google.com/uc?id=1wsIkYOtQDPosKaJSgCdIqgqOMdNi8xPl&export=download';
     downloadLink.download = 'Utkarash-Thakur-Resume.pdf';
     downloadLink.click();
+    window.open('assets/Utkarash-Thakur-Resume.pdf', '_blank');
     });
 
   function openResume() {
