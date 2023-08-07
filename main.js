@@ -66,16 +66,16 @@ const showMenu = (toggleId, navId) => {
       }
     });
   }
-  window.addEventListener('scroll', scrollActive);
+  // window.addEventListener('scroll', scrollActive);
   
-  // Scroll reveal animation
-  const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 1500,
-    delay: 200,
-    reset: true
-  });
+  // // Scroll reveal animation
+  // const sr = ScrollReveal({
+  //   origin: 'top',
+  //   distance: '60px',
+  //   duration: 1500,
+  //   delay: 200,
+  //   reset: true
+  // });
   // sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
   // sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img, .about__details', { delay: 300 });
   // sr.reveal('.home__social-icon', { interval: 200 });
