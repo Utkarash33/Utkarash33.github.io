@@ -13,13 +13,13 @@ const showMenu = (toggleId, navId) => {
   
   // Resume button click event listeners
   const resumeButton1 = document.getElementById('resume-button-1');
-  const resumeButton2 = document.getElementById('resume-button-2');
+  // const resumeButton2 = document.getElementById('resume-button-2');
   
   resumeButton1.addEventListener('click', openResume);
 
 
   
-    resumeButton2.addEventListener('click', openResume);
+    // resumeButton2.addEventListener('click', openResume);
 
   function openResume() {
     // Open the resume in a new tab
