@@ -16,17 +16,17 @@ const showMenu = (toggleId, navId) => {
   const resumeButton2 = document.getElementById('resume-button-2');
   
   resumeButton1.addEventListener('click', openResume);
-
+   resumeButton2.addEventListener('click', openResume);
 
   
-    resumeButton2.addEventListener('click', ()=>
-    {
-    const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://drive.google.com/uc?id=1wsIkYOtQDPosKaJSgCdIqgqOMdNi8xPl&export=download';
-    downloadLink.download = 'Utkarash-Thakur-Resume.pdf';
-    downloadLink.click();
-    window.open('assets/Utkarash-Thakur-Resume.pdf', '_blank');
-    });
+    // resumeButton2.addEventListener('click', ()=>
+    // {
+    // const downloadLink = document.createElement('a');
+    // downloadLink.href = 'https://drive.google.com/uc?id=1wsIkYOtQDPosKaJSgCdIqgqOMdNi8xPl&export=download';
+    // downloadLink.download = 'Utkarash-Thakur-Resume.pdf';
+    // downloadLink.click();
+    // window.open('assets/Utkarash-Thakur-Resume.pdf', '_blank');
+    // });
 
   function openResume() {
     // Open the resume in a new tab
