@@ -71,8 +71,8 @@ const showMenu = (toggleId, navId) => {
   // Scroll reveal animation
   const sr = ScrollReveal({
     origin: 'top',
-    distance: '30px',
-    duration: 1000,
+    distance: '60px',
+    duration: 1500,
     delay: 200,
     reset: false
   });
