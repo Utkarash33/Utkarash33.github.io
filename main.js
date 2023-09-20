@@ -71,13 +71,13 @@ const showMenu = (toggleId, navId) => {
   // Scroll reveal animation
   const sr = ScrollReveal({
     origin: 'top',
-    distance: '60px',
-    duration: 1500,
+    distance: '30px',
+    duration: 1000,
     delay: 200,
-    reset: true
+    reset: false
   });
   sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
   sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img, .about__details', { delay: 300 });
   sr.reveal('.home__social-icon', { interval: 200 });
-  sr.reveal('.skills__data, .work__img', { interval: 200 });
+  sr.reveal('.skills__data', { interval: 200 });
   
