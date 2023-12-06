@@ -328,19 +328,37 @@
                 href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
                 />
 
-                <!-- Prepare a container for your calendar. -->
-               <div class="react-activity-calendar calendar" style="width: 65%;margin-top: 40px;">
-                <!-- Loading stuff -->
-                Loading the data just for you.
-                </div>
+   <!-- Prepare a container for your GitHub contributions graph. -->
+<div id="github-contributions" style="width: 65%; margin-top: 40px;">
+    <!-- Loading stuff -->
+    Loading the data just for you.
+</div>
 
-                <script>
-                GitHubCalendar(".calendar", "Utkarash33");
+<script>
+    // GitHub username
+    const username = "Utkarash33";
 
-                // or enable responsive functionality:
-                GitHubCalendar(".calendar", "Utkarash33", { responsive: true });
-               
-                </script>
+    // URL for GitHub contributions graph SVG
+    const svgUrl = `https://ghchart.rshah.org/${username}`;
+
+    // Fetch the SVG content and insert it into the container
+    fetch(svgUrl)
+        .then(response => response.text())
+        .then(svgContent => {
+            // Display the SVG in the container
+            document.getElementById("github-contributions").innerHTML = svgContent;
+
+            // Log a success message
+            console.log("GitHub contributions graph loaded successfully!");
+        })
+        .catch(error => {
+            // Log an error message
+            console.error("Error fetching GitHub contributions graph:", error);
+        });
+</script>
+
+
+
 
                         </section>
 
